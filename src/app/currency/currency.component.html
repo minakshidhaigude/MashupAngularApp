@@ -1,0 +1,23 @@
+<div style="display: flex; justify-content: center; align-items: center">
+  <div class="main-container">
+    <div class="selection-cont">
+      <select name="" id="country1" (change)="changebase($event)">
+        <option value="USD">US Dollar</option>
+        <option value="INR">Indian Rupee</option>
+        <option value="EUR">Euro</option>
+      </select>
+      <p>To</p>
+      <select name="" id="country1" (change)="tocountry($event)">
+        <option value="USD">US Dollar</option>
+        <option value="INR">Indian Rupee</option>
+        <option value="EUR">Euro</option>
+      </select>
+    </div>
+    <button (click)="convert()">Submit</button>
+    <div class="result">
+      <span
+        ><p>1 {{ base }} = {{ result }} {{ country }}</p></span
+      >
+    </div>
+  </div>
+</div>

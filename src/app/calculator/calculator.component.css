@@ -1,0 +1,62 @@
+.mycalc {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  border-radius: 10px;
+  background-color: rgb(192, 192, 192);
+}
+input {
+  padding: 10px;
+  margin: 5px;
+  width: 230px;
+  border-radius: 10px;
+  border: none;
+  font: size 20px;
+  font-weight: 700;
+}
+input:focus {
+  outline: none;
+}
+.all-btn {
+  display: flex;
+}
+.all-btn-numbers {
+  display: flex;
+  width: 210px;
+  flex-wrap: wrap;
+}
+.all-btn-signs {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.all-btn-signs button {
+  font-size: 25px;
+  margin: 10px;
+  padding: 5px;
+}
+.all-btn-numbers button {
+  background-color: white;
+  border: none;
+  font-size: 20px;
+  margin: 13px;
+  padding: 7px;
+}
+.btn-extra {
+  display: flex;
+}
+.btn-clear-equals {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.btn-clear-equals button {
+  width: 110px;
+  margin: 10px 5px;
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+}

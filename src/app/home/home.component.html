@@ -1,0 +1,32 @@
+<div class="container-fluid bg-primary p-5 text-center my-3">
+  <h1>Covid-19 India Tracker</h1>
+  <h5 class="text-muted" style="color: white">
+    Open Source Project for Tracking covid19 cases in India
+  </h5>
+</div>
+
+<div class="row my-5">
+  <div class="col-md-3">
+    <h5 class="text-warning">Confirmed</h5>
+    <p id="confirmed">{{ total_confirmed }}</p>
+  </div>
+  <div class="col-md-3">
+    <h5 class="text-info">Active</h5>
+    <p id="active">{{ total_active }}</p>
+  </div>
+  <div class="col-md-3">
+    <h5 class="text-success">Recovered</h5>
+    <p id="recovered">{{ total_recovered }}</p>
+  </div>
+  <div class="col-md-3">
+    <h5 class="text-danger">Deaths</h5>
+    <p id="deceased">{{ total_deaths }}</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-10">
+    <h2>Covid-19 India Tracker Line-Chart</h2>
+    <canvas id="myChart"></canvas>
+  </div>
+</div>

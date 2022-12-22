@@ -1,0 +1,15 @@
+<div class="outer-container">
+  <div class="input-add">
+    <input #addtask type="text" placeholder="add your task" />
+    <button id="newtaskbtn" (click)="newTask(addtask.value)">+</button>
+  </div>
+  <div class="removeall" *ngIf="tasks.length >= 1">
+    <button (click)="removeAll()">Remove All</button>
+  </div>
+  <div class="allnotes">
+    <div class="notes-card" *ngFor="let task of tasks">
+      <p>{{ task.title }}</p>
+      <button (click)="removeTask(task.id)">x</button>
+    </div>
+  </div>
+</div>
